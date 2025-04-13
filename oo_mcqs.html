@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Oriented Programming MCQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 60%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .mcq {
+            margin-bottom: 10px;
+        }
+
+        .mcq p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .mcq label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .mcq input {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .wrong {
+            color: red;
+        }
+
+        .no-selection {
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Object-Oriented Programming MCQs</h1>
+
+        <!-- MCQ 1 -->
+        <div class="mcq">
+            <p>1. Which of the following is a fundamental concept of Object-Oriented Programming?</p>
+            <label><input type="radio" name="oop_1" value="a"> a) Encapsulation</label>
+            <label><input type="radio" name="oop_1" value="b"> b) Function Overloading</label>
+            <label><input type="radio" name="oop_1" value="c"> c) Exception Handling</label>
+            <label><input type="radio" name="oop_1" value="d"> d) Memory Management</label><br>
+            <button onclick="checkAnswer('oop_1', 'a', 'result_1')">Check Answer</button>
+            <div id="result_1" class="result"></div>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="mcq">
+            <p>2. In Object-Oriented Programming, which concept allows one class to inherit the properties and behaviors of another class?</p>
+            <label><input type="radio" name="oop_2" value="a"> a) Encapsulation</label>
+            <label><input type="radio" name="oop_2" value="b"> b) Polymorphism</label>
+            <label><input type="radio" name="oop_2" value="c"> c) Inheritance</label>
+            <label><input type="radio" name="oop_2" value="d"> d) Abstraction</label><br>
+            <button onclick="checkAnswer('oop_2', 'c', 'result_2')">Check Answer</button>
+            <div id="result_2" class="result"></div>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="mcq">
+            <p>3. What is the purpose of the `super()` function in Object-Oriented Programming?</p>
+            <label><input type="radio" name="oop_3" value="a"> a) To call a method from the base class</label>
+            <label><input type="radio" name="oop_3" value="b"> b) To create a new object of the subclass</label>
+            <label><input type="radio" name="oop_3" value="c"> c) To create a new method in the subclass</label>
+            <label><input type="radio" name="oop_3" value="d"> d) To remove a class from the inheritance hierarchy</label><br>
+            <button onclick="checkAnswer('oop_3', 'a', 'result_3')">Check Answer</button>
+            <div id="result_3" class="result"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function checkAnswer(questionName, correctAnswer, resultId) {
+            // Get selected answer for the given question
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+            const resultElement = document.getElementById(resultId);
+            
+            if (selectedOption) {
+                // Check if selected option is correct or wrong
+                if (selectedOption.value === correctAnswer) {
+                    resultElement.textContent = "Correct Answer!";
+                    resultElement.classList.remove('wrong', 'no-selection');
+                    resultElement.classList.add('correct');
+                } else {
+                    resultElement.textContent = "Wrong Answer. Try again!";
+                    resultElement.classList.remove('correct', 'no-selection');
+                    resultElement.classList.add('wrong');
+                }
+            } else {
+                resultElement.textContent = "Please select an answer.";
+                resultElement.classList.remove('correct', 'wrong');
+                resultElement.classList.add('no-selection');
+            }
+        }
+    </script>
+
+</body>
+</html>
