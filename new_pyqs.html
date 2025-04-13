@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYQs</title>
+    <link rel="stylesheet" href="pyqstyle.css">
+    
+</head>
+<body>
+    <h1>PYQs</h1>
+
+    <!-- Buttons for each subject -->
+    <div>
+        <button class="subject-button" onclick="toggleVisibility('sem1')">Sem 1 PYQs</button>
+        <button class="subject-button" onclick="toggleVisibility('sem2')">Sem 2 PYQs</button>
+    </div>
+
+    <!-- Sem 1 Subjects -->
+    <div id="sem1" style="display:none;">
+        <h2>Sem 1 Subjects</h2>
+        
+        <!-- computer graphics -->
+        <button class="subject-button" onclick="toggleVisibility('ds')">Computer graphics</button>
+        <div id="ds" class="chapter-list" style="display:none;">
+            <button class="PYQs" onclick="toggleVisibility('ds-chapters')">PYQs</button>
+            <div id="ds-chapters" class="chapter-list" style="display:none;">
+                <a href="CG 2023.pdf" class="pdf-link" botton>2022</a>
+                <a href="CG_2024.pdf" class="pdf-link" botton>2023</a>
+
+            </div>
+        </div>
+
+        <!-- Discrete Mathematics -->
+        <button class="subject-button" onclick="toggleVisibility('dm')">Discrete Mathematics</button>
+        <div id="dm" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('dm-chapters')">PYQs</button>
+            <div id="dm-chapters" class="chapter-list" style="display:none;">
+                <a href="DM Nov_Dec_2023.pdf" class="pdf-link" botton>2022</a>
+                <a href="DM Nov_Dec_2024.pdf" class="pdf-link" botton>2023</a>
+            </div>
+        </div>
+
+        <!-- Object Oriented Programming -->
+        <button class="subject-button" onclick="toggleVisibility('oop')">Object Oriented Programming</button>
+        <div id="oop" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('oop-chapters')">PYQs</button>
+            <div id="oop-chapters" class="chapter-list" style="display:none;">
+                <a href="OOP May_Jun_2023.pdf" class="pdf-link" botton>2022</a>
+                <a href="OOP May_Jun_2024.pdf" class="pdf-link" botton>2023</a>
+            </div>
+        </div>
+
+
+        <!-- Fundamental Data Structure -->
+        <button class="subject-button" onclick="toggleVisibility('fds')">Fundamental Data Structure</button>
+        <div id="fds" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('fds-chapters')">PYQs</button>
+            <div id="fds-chapters" class="chapter-list" style="display:none;">
+                <a href="FDS Nov_Dec_2023.pdf" class="pdf-link" botton>2022</a>
+                <a href="FDS Nov_Dec_2024.pdf" class="pdf-link" botton>2023</a>
+            </div>
+        </div>
+        <!-- deld -->
+        <button class="subject-button" onclick="toggleVisibility('fds')">DELD</button>
+        <div id="fds" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('fds-chapters')">PYQs</button>
+            <div id="deld" class="chapter-list" style="display:none;">
+                <a href="DELD May_Jun_2023  (1).pdf" class="pdf-link" botton>2022</a>
+                <a href="DELD May_Jun_2024.pdf" class="pdf-link" botton>2023</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sem 2 Subjects -->
+    <div id="sem2" style="display:none;">
+        <h2>Sem 2 Subjects</h2>
+        
+                <!-- Data Structures Algorithms -->
+                <button class="subject-button" onclick="toggleVisibility('ds')">Data Structures Algorithms</button>
+                <div id="ds" class="chapter-list" style="display:none;">
+                    <button class="PYQs" onclick="toggleVisibility('ds-chapters')">PYQs</button>
+                    <div id="ds-chapters" class="chapter-list" style="display:none;">
+                        <a href="DSA_2023.pdf" class="pdf-link" botton>2022</a>
+                        <a href="DSA_2024.pdf" class="pdf-link" botton>2023</a>
+        
+                    </div>
+                </div>
+                <!-- Mathematics Engineering 3 -->
+        <button class="subject-button" onclick="toggleVisibility('me3')">Mathematics Engineering 3</button>
+        <div id="me3" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('me3-chapters')">PYQs</button>
+            <div id="me3-chapters" class="chapter-list" style="display:none;">
+                <a href="M3_2023.pdf" class="pdf-link" botton>2022</a>
+                <a href="M3_2024.pdf" class="pdf-link" botton>2023</a>
+            </div>
+        </div>
+
+        <!-- Software Engineering -->
+        <button class="subject-button" onclick="toggleVisibility('se')">Software Engineering</button>
+        <div id="se" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('se-chapters')">PYQs</button>
+            <div id="se-chapters" class="chapter-list" style="display:none;">
+                <a href="SE_2023.pdf" class="pdf-link" botton>2022</a>
+                <a href="SE_2024.pdf" class="pdf-link" botton>2023</a>
+            </div>
+        </div>
+
+
+        <!-- mp -->
+        <button class="subject-button" onclick="toggleVisibility('ads')">Microprossor</button>
+        <div id="ads" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('ads-chapters')">PYQs</button>
+            <div id="ads-chapters" class="chapter-list" style="display:none;">
+                <a href="MP_2023.pdf" class="pdf-link" botton>2022</a>
+                <a href="MP_2024.pdf" class="pdf-link" botton>2023</a>
+            </div>
+        </div>
+                <!-- PPL -->
+                <button class="subject-button" onclick="toggleVisibility('ads')">PPL</button>
+                <div id="ads" class="chapter-list" style="display:none;">
+                    <button class="chapter-button" onclick="toggleVisibility('ads-chapters')">PYQs</button>
+                    <div id="ads-chapters" class="chapter-list" style="display:none;">
+                        <a href="PPL_2023.pdf" class="pdf-link" botton>2022</a>
+                        <a href="PPL_2024.pdf" class="pdf-link" botton>2023</a>
+                    </div>
+                </div>
+    </div>
+
+    <a href="homepage.php"><button>Back to Home</button></a>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQs</title>
+    <link rel="stylesheet" href="mcqstyle.css">
+
+
+</head>
+<body>
+
+    <h1>MCQs</h1>
+
+    <!-- Buttons for each subject -->
+    <div>
+        <button class="subject-button" onclick="toggleVisibility('sem1')">Sem 1 MCQs</button>
+        <button class="subject-button" id="sem2Btn" onclick="toggleVisibility('sem2')">Sem 2 MCQs</button>
+    </div>
+
+    <!-- Sem 1 Subjects -->
+    <div id="sem1" style="display:none;">
+        <h2>Sem 1 Subjects</h2>
+        
+        <!-- Data Structures Algorithms -->
+        <button class="subject-button" onclick="toggleVisibility('ds')">Data Structures Algorithms</button>
+        <div id="ds" class="chapter-list" style="display:none;">
+            <a href="ds.html" class="pdf-link">MCQs</a> 
+        </div>
+      
+        <!-- Discrete Mathematics -->
+        <button class="subject-button" onclick="toggleVisibility('dm')">Discrete Mathematics</button>
+        <div id="dm" class="chapter-list" style="display:none;">
+            <a href="dm_mcqs.html" class="pdf-link">MCQs</a> 
+        </div>
+
+        <!-- Object Oriented Programming -->
+        <button class="subject-button" onclick="toggleVisibility('oop')">Object Oriented Programming</button>
+        <div id="oop" class="chapter-list" style="display:none;">
+            <a href="oo_mcqs.html" class="pdf-link">MCQs</a>
+        </div>
+
+        <!-- Fundamental Data Structure -->
+        <button class="subject-button" onclick="toggleVisibility('fds')">Fundamental Data Structure</button>
+        <div id="fds" class="chapter-list" style="display:none;">
+            <a href="fds_mcqs.html" class="pdf-link">MCQs</a>
+        </div>
+    </div>
+
+    <!-- Sem 2 Subjects -->
+    <div id="sem2" style="display:none;">
+        <h2>Sem 2 Subjects</h2>
+        
+        <!-- Mathematics Engineering 3 -->
+        <button class="subject-button" onclick="toggleVisibility('me3')">Mathematics Engineering 3</button>
+        <div id="me3" class="chapter-list" style="display:none;">
+            <a href="m3_mcqs.html" class="pdf-link">MCQs</a>
+        </div>
+
+        <!-- Software Engineering -->
+        <button class="subject-button" onclick="toggleVisibility('se')">Software Engineering</button>
+        <div id="se" class="chapter-list" style="display:none;">
+            <a href="se_mcqs.html" class="pdf-link">MCQs</a>
+        </div>
+
+        <!-- Microprocessor -->
+        <button class="subject-button" onclick="toggleVisibility('mp')">Microprocessor</button>
+        <div id="mp" class="chapter-list" style="display:none;">
+            <a href="mp_mcqs.html" class="pdf-link">MCQs</a>
+        </div>
+
+        <!-- Principle of programming language -->
+        <button class="subject-button" onclick="toggleVisibility('ppl')">Principle of Programming Language</button>
+        <div id="ppl" class="chapter-list" style="display:none;">
+            <a href="ppl_mcqs.html" class="pdf-link">MCQs</a>
+        </div>
+    </div>
+
+    <a href="homepage.php">
+        <button class="back-button">Back to Home</button>
+    </a>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+        </script>
+    
+</body>
+</html>

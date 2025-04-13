@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="notesstyle.css">
+    
+</head>
+<body>
+    <h1>Notes</h1>
+
+    <!-- Buttons for each subject -->
+    <div>
+        <button class="subject-button" onclick="toggleVisibility('sem1')">Sem 1 SUBJECT</button>
+        <button class="subject-button" onclick="toggleVisibility('sem2')">Sem 2 SUBJECT</button>
+    </div>
+
+    <!-- Sem 1 Subjects -->
+    <div id="sem1" style="display:none;">
+        <h2>Sem 1 Subjects</h2>
+        
+        <!-- computer graphics-->
+        <button class="subject-button" onclick="toggleVisibility('ds')">Computer Graphics </button>
+        <div id="ds" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('ds-chapters')">Chapters</button>
+            <div id="ds-chapters" class="chapter-list" style="display:none;">
+                <a href="Unit 1.pptx.pdf" class="pdf-link" botton>Unit I: graphics primitives and scan conversion algorithms</a>
+                <a href="Unit 2.pptx.pdf" class="pdf-link" botton>Unit II: polygon , windowing and clipping</a>
+                <a href="Unit 3.pptx.pdf" class="pdf-link" botton>Unit III : 2D,3D transformation and projection</a>
+                <a href="Unit 4.pptx.pdf" class="pdf-link" botton>Unit IV: light color shading and hidden surfaces</a>
+                <a href="Unit 5.pptx.pdf" class="pdf-link" botton>Unit V : curves and fractorals</a>
+                <a href="Unit 6 Introduction to Animation and Gaming.pptx.pdf" class="pdf-link" botton>Unit VI : introduction to animation and gaming </a>
+
+            </div>
+        </div>
+        
+
+        <!-- Discrete Mathematics -->
+        <button class="subject-button" onclick="toggleVisibility('dm')">Discrete Mathematics</button>
+        <div id="dm" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('dm-chapters')">Chapters</button>
+            <div id="dm-chapters" class="chapter-list" style="display:none;">
+                <a href="DM Unit 1 -_new.pptx.pdf" class="pdf-link" botton>Chapter 1: Set Theory and Logic (PDF)</a>
+                <a href="DM Unit 2 (Final).pptx.pdf" class="pdf-link" botton>Chapter 2: relation and function (PDF)</a>
+                <a href="DM-Unit 3.pptx.pdf" class="pdf-link" botton>Chapter 3: counting principal (PDF)</a>
+                <a href="DM-Unit IV-Graph Th_final.pdf" class="pdf-link" botton>Chapter 4: graph theory (PDF)</a>
+                <a href="Unit V-Trees.pptx.pdf" class="pdf-link" botton>Chapter 5: Trees (PDF)</a>
+                <a href="Unit VI-Algebraic Structures and Coding Theory.pptx.pdf" class="pdf-link" botton>Chapter 6: algebric structure and codeing theory (PDF)</a>
+            </div>
+        </div>
+
+
+
+        <!-- Object Oriented Programming -->
+        <button class="subject-button" onclick="toggleVisibility('oop')">Object Oriented Programming</button>
+        <div id="oop" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('oop-chapters')">Chapters</button>
+            <div id="oop-chapters" class="chapter-list" style="display:none;">
+                <a href="OOPU1.pdf" class="pdf-link" botton>Unit I Fundamentals of Object Oriented Programming</a>
+                <a href="OOPU2.pdf" class="pdf-link" botton>Unit II Inheritance and Pointers</a>
+                <a href="chapter3_oop.pdf" class="pdf-link" botton>Unit III Polymorphism</a>
+                <a href="OOPU4.pdf" class="pdf-link" botton>Unit IV Files and Streams</a>
+                <a href="OOPU5.pdf" class="pdf-link" botton>Unit V Exception Handling & Templates</a>
+                <a href="OOPU6.pdf" class="pdf-link" botton>Unit VI Standard Template Library (STL) </a>
+            </div>
+        </div>
+        <!--deld-->
+        <button class="subject-button" onclick="toggleVisibility('dm2')">DIGITITAL LOGIC</button>
+        <div id="dm2" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('dm2-chapters')">Chapters</button>
+             <div id="dm2-chapters" class="chapter-list" style="display:none;">
+                <a href="unit1deld.pdf" class="pdf-link" botton>Unit I Minimization Technique </a>
+                <a href="chapter2_ads.pdf" class="pdf-link" button>Unit II Combinational Logic Design</a>
+                <a href="unit3.pdf" class="pdf-link" button>Unit III Sequential Logic Design</a>
+                <a href="unit4.pdf" class="pdf-link" button>Unit IV Algorithmic State Machines and Programmable 
+                            Logic Devices</a>
+                <a href="unit5.pdf" class="pdf-link" button>Unit V Logic Families</a>
+                <a href="unit6.pdf" class="pdf-link" button>Unit VI Introduction to Computer Architecture</a>
+            </div>
+         </div>
+
+        <!-- Fundamental Data Structure -->
+        <button class="subject-button" onclick="toggleVisibility('fds')">Fundamental Data Structure</button>
+        <div id="fds" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('fds-chapters')">Chapters</button>
+            <div id="fds-chapters" class="chapter-list" style="display:none;">
+                <a href="unit-1-FDS.pdf" class="pdf-link" button>Unit I Introduction to Algorithm and Data Structures</a>
+                <a href="Unit-2-Linear Data Structure using sequential organization.pptx.pdf" class="pdf-link" button>Unit II Linear Data Structure Using Sequential 
+                    Organization</a>
+                <a href="unit-3-FDS.pdf" class="pdf-link" button>Unit III Searching and Sorting</a>
+                <a href="Unit-4-linked list.pdf" class="pdf-link" button>Unit IV Linked List</a>
+                <a href="unit-5-FDS.pdf" class="pdf-link" button>Unit V Stack</a>
+                <a href="unit-6-FDS.pdf" class="pdf-link" button>Unit VI Queue</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sem 2 Subjects -->
+    <div id="sem2" style="display:none;">
+        <h2>Sem 2 Subjects</h2>
+        
+        <!-- Mathematics Engineering 3 -->
+        <button class="subject-button" onclick="toggleVisibility('me3')">Mathematics Engineering 3</button>
+        <div id="me3" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('me3-chapters')">Chapters</button>
+            <div id="me3-chapters" class="chapter-list" style="display:none;">
+                <a href="chapter1_me3.pdf" class="pdf-link" download>Chapter 1: Complex Numbers (PDF)</a>
+                <a href="chapter2_me3.pdf" class="pdf-link" download>Chapter 2: Differential Equations (PDF)</a>
+                <a href="chapter3_me3.pdf" class="pdf-link" download>Chapter 3: Vector Calculus (PDF)</a>
+                <a href="chapter4_me3.pdf" class="pdf-link" download>Chapter 4: Laplace Transforms (PDF)</a>
+                <a href="chapter4_me3.pdf" class="pdf-link" download>Chapter 4: Laplace Transforms (PDF)</a>
+                <a href="chapter4_me3.pdf" class="pdf-link" download>Chapter 4: Laplace Transforms (PDF)</a>
+            </div>
+        </div>
+
+        <!-- MP-->
+        <button class="subject-button" onclick="toggleVisibility('ads')">MICROPROCESSOR </button>
+        <div id="ads" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('ads-chapters')">Chapters</button>
+            <div id="ads-chapters" class="chapter-list" style="display:none;">
+                  <a href="Unit 1 MP_ Introduction to 80386.pdf" class="pdf-link" button>Unit I 80386DX- Basic Programming Model and 
+    Applications Instruction Set</a>
+                  <a href="MP_Unit_II_PPT.pdf" class="pdf-link" button>Unit II Systems Architecture and Memory Management </a>
+                  <a href="Unit-III Memory Management.pdf" class="pdf-link" button>Unit III Protection and Multitasking</a>
+                  <a href="UNIT-IVmp.pdf" class="pdf-link" button>Unit IV Input-Output, Exceptions and Interrupts </a>
+                  <a href="UNIT-5mp.pdf" class="pdf-link" button>Unit V Initialization of 80386DX, Debugging and Virtual 
+                        8086 Mode</a>
+                  <a href="chapter4_me3.pdf" class="pdf-link" button>Unit VI 80387 Coprocessor and Introduction to 
+                            Microcontrollers</a>
+             </div>
+        </div>
+
+        <!-- Software Engineering -->
+        <button class="subject-button" onclick="toggleVisibility('ss')">SOFTWARE ENGINEERING</button>
+        <div id="ss" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('ss-chapters')">Chapters</button>
+            <div id="ss-chapters" class="chapter-list" style="display:none;">
+                <a href="SE_Unit One.pdf" class="pdf-link" button>Unit I Introduction to Software Engineering and 
+                    Software Process Models
+                    </a>
+                <a href="SE_Unit_Two.pdf" class="pdf-link" button>Unit II Software Requirements Engineering and Analysis</a>
+                <a href="SE_Unit_3.pdf" class="pdf-link" button>Unit III Estimation and Scheduling</a>
+                <a href="SE_Unit_3.pdf" class="pdf-link" button>Unit IV Design Engineering</a>
+                <a href="SE_Unit5[1].pdf" class="pdf-link" button>Unit V Risks and Configuration Management</a>
+                <a href="Unit_6[1].pdf" class="pdf-link" button>Unit VI Software Testing</a>
+            </div>
+        </div>
+
+
+        <!-- dsa -->
+        <button class="subject-button" onclick="toggleVisibility('rr')">Data Structure Algorithm</button>
+        <div id="rr" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('rr-chapters')">Chapters</button>
+            <div id="rr-chapters" class="chapter-list" style="display:none;">
+                <a href="Unit 1 Hashing.pptx.pdf" class="pdf-link" button>Unit I Hashing</a>
+                <a href="Unit-II_dsa.pdf" class="pdf-link"  button>Unit II Graphs</a>
+                <a href="Unit-III_Graphs.pdf" class="pdf-link"  button>Unit III Trees</a>
+                <a href="Unit-IV-Search Trees.pdf" class="pdf-link"  button>Unit IV Search Trees</a>
+                <a href="Unit 5 Multiway search.pdf" class="pdf-link"  button>Unit V Indexing and Multiway Trees </a>
+                <a href="chapter4_dm2.pdf" class="pdf-link"  button>Unit VI File Organization</a>
+            </div>
+        </div>
+
+        <!-- ppl-->
+        <button class="subject-button" onclick="toggleVisibility('pp')">PRINCIPLE OF PROGRAMMING LANGUAGE </button>
+        <div id="pp" class="chapter-list" style="display:none;">
+            <button class="chapter-button" onclick="toggleVisibility('pp-chapters')">Chapters</button>
+            <div id="pp-chapters" class="chapter-list" style="display:none;">
+                <a href="Unit 1 PPL.pdf" class="pdf-link" button>Unit I Fundamentals of Programming </a>
+                <a href="Unit 2 Part 1 Elementary Data Types.pdf" class="pdf-link"  button>Unit II Structuring the Data, Computations and Program </a>
+                <a href="Unit 3 PPL.pdf" class="pdf-link"  button>Unit III Java as Object Oriented Programming LanguageOverview</a>
+                <a href="Unit 4 PPL_Inheritance.pdf" class="pdf-link" button>Unit IV Inheritance, Packages and Exception Handling 
+                    using Java</a>
+                <a href="Unit 5ppl.pdf" class="pdf-link" button>Unit V Multithreading in Java</a>
+                <a href="Unit 6ppl.pdf" class="pdf-link" button>Unit VI Logical and Functional Programming</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <a href="homepage.php"><button>Back to Home</button></a>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

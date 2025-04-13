@@ -1,0 +1,98 @@
+/* Base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5faff;
+    color: #5393f3;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    color: #131314;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4d9ef4;
+    margin-top: 20px;
+}
+
+/* Subject buttons */
+.subject-button {
+    background-color: #1e56a0;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Hover effect for subject buttons */
+.subject-button:hover {
+    background-color: #1d6ceb;
+    transform: scale(1.02);
+}
+
+/* Chapter list */
+.chapter-list {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Link to PDF/MCQ */
+.pdf-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e8f0fe;
+    color: #2072dd;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-link:hover {
+    background-color: #c6dcf8;
+}
+
+/* Back button */
+.back-button {
+    background-color: #1669e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-button:hover {
+    background-color: #082145;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .subject-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .pdf-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

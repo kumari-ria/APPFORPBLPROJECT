@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamental Data Structure MCQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 60%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .mcq {
+            margin-bottom: 20px;
+        }
+
+        .mcq p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .mcq label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .mcq input {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .wrong {
+            color: red;
+        }
+
+        .no-selection {
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fundamental Data Structure MCQs</h1>
+
+        <!-- MCQ 1 -->
+        <div class="mcq">
+            <p>1. What is the time complexity of accessing an element in an array by index?</p>
+            <label><input type="radio" name="ds_1" value="a"> a) O(1)</label>
+            <label><input type="radio" name="ds_1" value="b"> b) O(n)</label>
+            <label><input type="radio" name="ds_1" value="c"> c) O(log n)</label>
+            <label><input type="radio" name="ds_1" value="d"> d) O(n log n)</label><br>
+            <button onclick="checkAnswer('ds_1', 'a', 'result_1')">Check Answer</button>
+            <div id="result_1" class="result"></div>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="mcq">
+            <p>2. Which data structure is used in the implementation of a breadth-first search (BFS) algorithm?</p>
+            <label><input type="radio" name="ds_2" value="a"> a) Stack</label>
+            <label><input type="radio" name="ds_2" value="b"> b) Queue</label>
+            <label><input type="radio" name="ds_2" value="c"> c) Array</label>
+            <label><input type="radio" name="ds_2" value="d"> d) Linked List</label><br>
+            <button onclick="checkAnswer('ds_2', 'b', 'result_2')">Check Answer</button>
+            <div id="result_2" class="result"></div>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="mcq">
+            <p>3. In a singly linked list, which operation requires O(n) time complexity?</p>
+            <label><input type="radio" name="ds_3" value="a"> a) Insertion at the beginning</label>
+            <label><input type="radio" name="ds_3" value="b"> b) Deletion at the beginning</label>
+            <label><input type="radio" name="ds_3" value="c"> c) Traversing the list</label>
+            <label><input type="radio" name="ds_3" value="d"> d) Insertion at the end</label><br>
+            <button onclick="checkAnswer('ds_3', 'd', 'result_3')">Check Answer</button>
+            <div id="result_3" class="result"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function checkAnswer(questionName, correctAnswer, resultId) {
+            // Get selected answer for the given question
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+            const resultElement = document.getElementById(resultId);
+            
+            if (selectedOption) {
+                // Check if selected option is correct or wrong
+                if (selectedOption.value === correctAnswer) {
+                    resultElement.textContent = "Correct Answer!";
+                    resultElement.classList.remove('wrong', 'no-selection');
+                    resultElement.classList.add('correct');
+                }
+            }
+        }
+        
